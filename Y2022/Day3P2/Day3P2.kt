@@ -54,17 +54,4 @@ class Day3P2Solver(val args: Array<String>) : ISolver {
 
         return result
     }
-
-    private fun getOcurrencies(first: String, second: String) : List<Char> {
-
-        var result = mutableListOf<Char>()
-
-        for (i in 0 until first.length) {
-            val currentChar = first[i]
-            if (second.contains(currentChar))
-                result.add(currentChar)
-        }
-
-        return result.distinct()
-    }
 }
