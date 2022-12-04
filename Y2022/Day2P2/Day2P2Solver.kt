@@ -2,7 +2,6 @@ package Y2022.Day2P2
 
 import shared.advent.emgvivas.interfaces.ISolver
 import shared.advent.emgvivas.util.Util
-import java.lang.Exception
 
 class Day2P2Solver(val args: Array<String>) : ISolver {
 

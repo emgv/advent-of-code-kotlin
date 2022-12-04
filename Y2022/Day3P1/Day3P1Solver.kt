@@ -2,7 +2,6 @@ package Y2022.Day3P1
 
 import shared.advent.emgvivas.interfaces.ISolver
 import shared.advent.emgvivas.util.Util
-import java.lang.Exception
 
 class Day3P1Solver(val args: Array<String>) : ISolver {
 
