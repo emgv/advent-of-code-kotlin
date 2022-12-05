@@ -38,7 +38,7 @@ class Day5P2Solver(val args: Array<String>) : ISolver {
     private fun parseInput(input: List<String>) : StacksPlan {
 
         var stacks = mutableListOf<ArrayDeque<String>>()
-        val pattern = "(    |\\[[A-Z]\\]|[0-9]{1,})".toRegex(RegexOption.IGNORE_CASE)
+        val pattern = "( {4}|\\[[A-Z]\\]|[0-9]{1,})".toRegex(RegexOption.IGNORE_CASE)
         var stacksDone = false
         var planStartIndex = -1
 
@@ -83,28 +83,6 @@ class Day5P2Solver(val args: Array<String>) : ISolver {
                 )
             )
         }
-/*
-    val str = "                        [Z] [W] [Z]    "
-    val d = "(    |\\[[A-Z]\\])".toRegex().findAll(str)
-
-    println("=>")
-    d.forEach {
-
-        println(":${it.groups[0]}")
-    }
-    /*=========== Output ===========
-    :MatchGroup(value=    , range=0..3)
-    :MatchGroup(value=    , range=4..7)
-    :MatchGroup(value=    , range=8..11)
-    :MatchGroup(value=    , range=12..15)
-    :MatchGroup(value=    , range=16..19)
-    :MatchGroup(value=    , range=20..23)
-    :MatchGroup(value=[Z], range=24..26)
-    :MatchGroup(value=[W], range=28..30)
-    :MatchGroup(value=[Z], range=32..34)
-    :MatchGroup(value=    , range=35..38)
-    */
- */
         return StacksPlan(stacks, commands)
     }
 }
