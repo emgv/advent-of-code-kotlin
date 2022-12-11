@@ -10,7 +10,6 @@ class Day8P2Solver(val args: Array<String>) : ISolver {
         val grid = parseInput(gridInput)
         val w = grid[0].size
         val h = grid.size
-        var visibleCount = 0
         var highestScore = 0
 
         for(r in 1 until h-1) {
