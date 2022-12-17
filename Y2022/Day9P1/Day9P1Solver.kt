@@ -36,10 +36,6 @@ class Day9P1Solver(val args: Array<String>) : ISolver {
             return "${x}, ${y}"
         }
 
-        fun isNeg(): Boolean {
-            return x < 0 || y < 0
-        }
-
         fun eq(xPos: Int, yPos: Int): Boolean {
             return x == xPos && y == yPos
         }

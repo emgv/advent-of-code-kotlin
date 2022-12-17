@@ -1,6 +1,6 @@
-import Y2022.Day5P2.Day5P2Solver
+import Y2022.Day12P2.Day12P2Solver
 
 fun main(args: Array<String>) {
-    val solver = Day5P2Solver(args)
+    val solver = Day12P2Solver(args)
     solver.run()
 }
